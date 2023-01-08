@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Overpass&family=Roboto+Slab&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.btn{
+    font-family: 'Overpass', sans-serif;
+font-size: 12px !important;
+}
+
+.nav {
+    background: #27272A;
+    position: fixed;
+    padding: 50px 0;
+    width: 100%;
+    top: -200px;
+    left: 0;
+    z-index: 99999999999999999;
+    height: 100vh;
+    display: none;
+    transition: .3s ease-in-out;
+}
+
+.nav-toggle {
+    top: 0 !important;
+    display: initial !important;
+}
+
+#close-nav{
+    cursor: pointer;
+}
+
+.menu-bg {
+    position: absolute;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+}
+
+.kv-navbar .secHeader {
+    font-size: 36px;
+    position: relative;
+}
+
+.sm-text {
+    font-size: 14px;
+    color: #058B71;
+    position: absolute;
+    left: -25px;
+    top: -10px;
+}
+
+.kv-navbar .nav-item {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.spc-box .nav-link {
+    color: #058B71;
+    font-size: 12px;
+}
+
+.navbar-toggler {
+    display: initial !important;
+    padding: 0 !important;
+}
+
+.btn {
+    border-radius: 999px;
+    padding: 13px 22px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-bg{
+    background: #3a3a3ac2;
+}
+
+.whitebtn:hover {
+    background: #3D707F;
+    color: #fff !important;
+    border-color: #3D707F;
+}
+
+.menuBtn {
+    background: #058B71 !important;
+    outline: none !important;
+}
+
+.menuBtn:hover,
+.supBtn:hover {
+    background: #000 !important;
+    color: #fff;
+}
+
+.supBtn {
+    background: #3D707F;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.banner {
+    background-image: url("../images/banner.jpg");
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+.banner-caption {
+    position: relative;
+}
+
+.sub-head {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #fff;
+}
+
+.heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 96px;
+    color: #fff;
+}
+
+.scollToTop {
+    position: absolute;
+    right: 0px;
+    bottom: 100px;
+    transform: rotate(180deg);
+}
+
+.sectitle {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: #058B71;
+    text-transform: uppercase;
+}
+
+.secHeader {
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.secPara {
+    font-family: 'Overpass', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.about,
+.gallery,
+.story,
+.enquiry,
+.news {
+    padding: 100px 0;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.card-image {
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.main {
+    position: relative;
+}
+
+.swiper-container img {
+    width: 100% !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-image: none;
+    background-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0;
+    margin-top: -1rem;
+}
+
+.swiper-button-prev {
+    left: 50px !important;
+}
+
+.swiper-button-next {
+    right: 50px !important;
+}
+
+
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    display: none;
+}
+
+.gall-control {
+    position: relative;
+    width: 220px;
+    margin-top: 100px;
+}
+.gall-caption {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.gall-caption h3{
+    color: #fff;
+}
+.gall-par h3{
+    line-height: 25px;
+}
+
+.slider-sec .swiper-button-prev i,
+.slider-sec .swiper-button-next i {
+    color: #9e9e9e;
+    border: 2px solid #9e9e9e;
+}
+
+.slider-sec .swiper-button-prev i:hover,
+.slider-sec .swiper-button-next i:hover {
+    color: #fff !important;
+    border: 2px solid #fff !important;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    display: initial;
+    font-size: 40px;
+    border: 2px solid #9e9e9e;
+    color: #9e9e9e;
+    padding: 20px;
+    border-radius: 50%;
+    line-height: .9;
+    transition: .3s ease-in-out;
+}
+
+.swiper-button-prev i:hover,
+.swiper-button-next i:hover {
+    border: 2px solid #3C8972;
+    color: #000;
+}
+
+.swiper-button-prev .prev-icon {
+    transform: rotate(180deg);
+}
+
+.story-box {
+    position: relative;
+    background: url('../images/ourStoryBg.jpg');
+    background-repeat: no-repeat;
+}
+
+.story-img {
+    position: absolute;
+    right: -90px;
+    top: -110px;
+}
+
+.blue-btn {
+    color: #3D707F !important;
+}
+
+h3.sectitle {
+    font-size: large;
+}
+
+.swiper-pagination-bullet-active {
+    position: relative;
+}
+
+span.swiper-pagination-bullet-active::after {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: red !important;
+    left: 0 !important;
+    top: 0 !important;
+}
+
+.news .card {
+    position: relative;
+    border: none;
+    border-radius: 0;
+}
+
+.bigFont {
+    font-family: 'Merriweather', serif;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.news .secHeader {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.cardbg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    z-index: 10;
+}
+
+.kv-label {
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.form-control:focus,
+.form-select:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.form-control,
+.form-select {
+    border-bottom: 1px solid #ced4da !important;
+    border-radius: 0;
+    border: none;
+}
+
+option,
+select {
+    color: #9e9e9e !important;
+}
+
+footer {
+    padding: 80px 0;
+    background: url('../images/footerbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cright {
+    color: #cbcbcb;
+}
+
+.scollToTop {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    transition: .3s ease-in-out;
+    z-index: 99;
+}
+
+.rotate {
+    transform: rotate(-180deg);
+}
+
+@media(max-width: 912px) {
+    .secHeader {
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+}
+
+@media(max-width: 768px) {
+    .gallery .about-caption {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .gall-control {
+        margin-top: 0;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+    * {
+        text-align: center;
+    }
+
+    .nav{
+        padding: 10px 0;
+    }
+
+    .logolg {
+        width: 210px;
+    }
+
+    .menuBtn {
+        min-width: auto !important;
+    }
+
+    .btn {
+        min-width: 250px;
+    }
+
+    .story-img {
+        display: none;
+    }
+
+    .story-box {
+        padding: 50px 0;
+        background-repeat: initial !important;
+    }
+
+    .secHeader {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .secPara {
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    .sectitle {
+        line-height: 40px;
+    }
+
+    .swiper-pagination {
+        bottom: -3px !important;
+    }
+
+
+    .news {
+        padding-bottom: 25px !important;
+    }
+
+    .heading {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 46px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .scollToTop {
+        display: none;
+    }
+
+    .swiper-button-prev i,
+    .swiper-button-next i {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    .swiper-button-next {
+        right: 18px !important;
+    }
+
+    .swiper-button-prev {
+        left: 18px !important;
+    }
+
+    .gallery .swiper-slide {
+        width: 100% !important;
+    }
+
+    .gallery {
+        position: relative;
+    }
+
+    .story {
+        padding-top: 10px;
+    }
+
+    .gall-control {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
+
+    .bigFont {
+        margin-top: 50px;
+    }
+
+    .scollToTop {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        transition: .3s ease-in-out;
+        z-index: 99;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .kv-navbar .secHeader {
+        font-size: 18px;
+    }
+
+    .spc-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    margin-top: 0px !important;
+    z-index: 99;
+    }
+
+
+}
